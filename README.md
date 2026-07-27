@@ -1,55 +1,45 @@
-# Crew Management System (Learning Haskell)
+## Week 1 - Day 1: Basic Functions and Type Annotations
 
-A project created to learn Haskell by building a real-world application from scratch.
+### Objectives
 
-Instead of creating many unrelated exercises, this repository evolves every week into a complete application.
+* Refresh Haskell fundamentals after a learning break.
+* Review function declarations and type annotations.
+* Practice writing pure functions without relying on external libraries.
 
-## Goals
+### Topics Covered
 
-- Learn Functional Programming
-- Learn Haskell
-- Build REST API
-- Learn SQLite
-- Learn PostgreSQL
-- Learn Docker
-- Learn Testing
-- Learn Authentication
+* Function declaration
+* Type annotations
+* Basic numeric types (`Int`, `Float`)
+* Function parameters and return values
+* Module creation and importing modules
 
-## Roadmap
+### Implemented Functions
 
-- [x] Week 1 - Fundamental Review
-- [ ] Week 2 - Higher Order Function
-- [ ] Week 3 - Recursion
-- [ ] Week 4 - CLI
-- [ ] Week 5 - Algebraic Data Types
-- [ ] Week 6 - Type Classes
-- [ ] Week 7 - Error Handling
-- [ ] Week 8 - Modules
-- [ ] Week 9 - File IO
-- [ ] Week 10 - JSON
-- [ ] Week 11 - Testing
-- [ ] Week 12 - SQLite
-- [ ] Week 13 - Query
-- [ ] Week 14 - Repository Pattern
-- [ ] Week 15 - REST API
-- [ ] Week 16 - Authentication
-- [ ] Week 17 - PostgreSQL
-- [ ] Week 18 - Docker
-- [ ] Week 19 - CI/CD
+* Mathematical operations:
 
-## Current Progress
+  * `square`
+  * `cube`
+  * `double`
+  * `triple`
+  * `half`
+* Geometry calculations:
 
-Week 1
+  * `circleArea`
+  * `rectangleArea`
+  * `triangleArea`
+* Unit conversion:
 
-- Function
-- Pattern Matching
-- Guards
-- Where
-- Let
-- Case
-- List
-- Tuple
+  * `fahrenheitToCelsius`
+  * `celsiusToFahrenheit`
 
-## Running
+### Key Learnings
 
-stack run
+* Every function should have a clear type signature.
+* Haskell functions are defined through expressions rather than statements.
+* Function composition starts with building small, reusable functions.
+* Type annotations improve readability and help catch errors early.
+
+### Result
+
+Successfully created and tested multiple basic functions and executed them through `Main.hs` using `stack run`.
