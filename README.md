@@ -43,3 +43,61 @@
 ### Result
 
 Successfully created and tested multiple basic functions and executed them through `Main.hs` using `stack run`.
+
+
+## Week 1 - Day 2: Pattern Matching and Guards
+
+### Objectives
+
+* Learn how Haskell handles different inputs using pattern matching.
+* Understand how guards can replace complex conditional statements.
+* Practice writing more declarative code.
+
+### Topics Covered
+
+* Pattern Matching
+* Wildcard Pattern (`_`)
+* Guards
+* Conditional Logic in Haskell
+* Function Evaluation Order
+
+### Implemented Functions
+
+#### Pattern Matching
+
+* `dayName`
+* `monthName`
+* `trafficLight`
+
+#### Guards
+
+* `grade`
+* `bmiCategory`
+
+### Key Learnings
+
+* Pattern matching allows functions to behave differently based on input values.
+* The wildcard pattern (`_`) can be used to handle unmatched cases.
+* Guards provide a readable alternative to nested `if-else` statements.
+* Guard conditions are evaluated from top to bottom.
+* The order of guards matters because the first matching condition is selected.
+
+### Examples
+
+```haskell
+dayName 1
+-- "Monday"
+
+trafficLight "red"
+-- "Stop"
+
+grade 95
+-- "A"
+
+bmiCategory 22.0
+-- "Normal"
+```
+
+### Result
+
+Successfully implemented and tested pattern matching and guard-based functions through `Main.hs` using `stack run`.
