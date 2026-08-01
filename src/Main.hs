@@ -1,6 +1,7 @@
 module Main (main) where
 import Basic.Functions
 import Basic.PatternMatching
+import Basic.WhereLet
 
 main :: IO ()
 main = do
@@ -16,3 +17,7 @@ main = do
   print (bmiCategory 17.5)
   print (bmiCategory 22.0)
   print (bmiCategory 27.0)
+  print (bmiTell 70 1.75)
+  print (employeeSalary 10000000)
+  print (calculateTotal 100000)
+  print (restaurantBill 100000)

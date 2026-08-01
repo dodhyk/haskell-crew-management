@@ -39,3 +39,31 @@ Haskell evaluates pattern matches from top to bottom.
 Haskell evaluates guards from top to bottom.
 Missing fallback patterns may cause non-exhaustive pattern errors.
 Guard ordering affects function results.
+
+## Week 1 - Day 3
+
+### Added
+
+#### Where Clause
+
+* Added `bmiTell` function using a `where` clause.
+* Added `shippingCost` function using local bindings with `where`.
+
+#### Let Expression
+
+* Added `calculateTotal` function using `let ... in`.
+* Added `restaurantBill` function with local calculations.
+* Added `employeeSalary` function using multiple local bindings.
+
+### Learned
+
+* Difference between `where` and `let`.
+* Local variable scope in Haskell.
+* Organizing repeated calculations using local bindings.
+* Writing cleaner and more maintainable functional code.
+
+### Notes
+
+* `where` is useful when local values are shared across multiple guards or equations.
+* `let ... in ...` is suitable for creating temporary values within a single expression.
+* Both approaches improve readability by avoiding repeated calculations.

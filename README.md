@@ -101,3 +101,63 @@ bmiCategory 22.0
 ### Result
 
 Successfully implemented and tested pattern matching and guard-based functions through `Main.hs` using `stack run`.
+
+
+## Week 1 - Day 3: Where Clauses and Let Expressions
+
+### Objectives
+
+* Understand the difference between `where` clauses and `let` expressions.
+* Learn how to create local bindings to improve code readability.
+* Practice reducing duplicated calculations by introducing intermediate variables.
+
+### Topics Covered
+
+* `where` clause
+* `let ... in ...` expression
+* Local bindings
+* Variable scope
+* Code readability and maintainability
+
+### Implemented Functions
+
+#### Using `where`
+
+* `bmiTell`
+* `shippingCost`
+
+#### Using `let`
+
+* `calculateTotal`
+* `restaurantBill`
+* `employeeSalary`
+
+### Key Learnings
+
+* `where` allows local values to be shared across an entire function definition, including all guards.
+* `let ... in ...` creates local bindings that are only available within a specific expression.
+* Introducing intermediate variables makes calculations easier to read and maintain.
+* Choosing between `where` and `let` depends on the scope where the values are needed.
+
+### Examples
+
+```haskell
+bmiTell 70 1.75
+-- "Normal"
+
+shippingCost 3
+-- 25000
+
+calculateTotal 100000
+-- 90000
+
+restaurantBill 100000
+-- 116550
+
+employeeSalary 10000000
+-- 10450000
+```
+
+### Result
+
+Successfully implemented and tested functions using both `where` clauses and `let` expressions. Gained a better understanding of variable scope and local bindings in Haskell.
