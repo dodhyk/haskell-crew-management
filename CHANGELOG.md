@@ -67,3 +67,44 @@ Guard ordering affects function results.
 * `where` is useful when local values are shared across multiple guards or equations.
 * `let ... in ...` is suitable for creating temporary values within a single expression.
 * Both approaches improve readability by avoiding repeated calculations.
+
+
+## Week 1 - Day 4
+
+### Added
+
+#### Case Expressions
+
+* Added examples using `case ... of`.
+* Implemented `isWeekend`.
+* Implemented `dayType`.
+* Implemented `gradeDescription`.
+* Implemented `loginStatus`.
+
+#### Guards
+
+* Implemented `shippingCategory`.
+* Implemented `studentResult`.
+* Implemented `classifyNumber`.
+* Implemented additional range-based classification exercises.
+
+#### Combined Practice
+
+* Implemented `employeeStatus`.
+* Implemented `scoreCategory`.
+
+### Learned
+
+* `case ... of` syntax and expression-based pattern matching.
+* Pattern matching using specific values.
+* Wildcard pattern (`_`) inside case expressions.
+* Using guards for range-based conditions.
+* Using `where` and `let` for local calculations.
+* Choosing between different Haskell constructs based on the problem.
+
+### Notes
+
+* Guards are generally easier to read when working with ranges and comparison-based conditions.
+* `case` is useful when matching against a set of known values or patterns.
+* `where` and `let` are useful for introducing intermediate values and calculations.
+* Different Haskell constructs can sometimes solve the same problem; readability and context should guide the choice.

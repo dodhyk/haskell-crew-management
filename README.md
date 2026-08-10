@@ -161,3 +161,99 @@ employeeSalary 10000000
 ### Result
 
 Successfully implemented and tested functions using both `where` clauses and `let` expressions. Gained a better understanding of variable scope and local bindings in Haskell.
+
+## Week 1 - Day 4: Case Expressions and Choosing the Right Construct
+
+### Objectives
+
+* Understand the `case ... of` expression in Haskell.
+* Practice pattern matching using `case`.
+* Understand when to use `case`, guards, `where`, and `let`.
+* Practice selecting a suitable Haskell construct based on the problem.
+
+### Topics Covered
+
+* `case ... of`
+* Pattern matching inside expressions
+* Wildcard pattern (`_`)
+* Guards for range-based conditions
+* `where` and `let` for local calculations
+* Choosing the appropriate construct for a problem
+
+### Implemented Functions
+
+#### Case Expressions
+
+* `isWeekend`
+* `dayType`
+* `gradeDescription`
+* `loginStatus`
+
+#### Guards
+
+* `shippingCategory`
+* `studentResult`
+* `classifyNumber`
+
+#### Combined Practice
+
+* `employeeStatus`
+* `scoreCategory`
+
+### Key Learnings
+
+#### Case Expressions
+
+The `case ... of` expression is useful when matching against specific, known values.
+
+Example:
+
+```haskell
+gradeDescription :: Char -> String
+gradeDescription grade =
+    case grade of
+        'A' -> "Excellent"
+        'B' -> "Good"
+        'C' -> "Fair"
+        'D' -> "Poor"
+        _   -> "Invalid Grade"
+```
+
+#### Guards
+
+Guards are useful when conditions involve ranges or comparisons.
+
+Example:
+
+```haskell
+shippingCategory :: Float -> String
+shippingCategory weight
+    | weight <= 1 = "Small"
+    | weight <= 5 = "Medium"
+    | otherwise   = "Large"
+```
+
+#### `where` and `let`
+
+`where` and `let` are useful when intermediate values or calculations need to be named and reused.
+
+### Decision Making
+
+One of the main goals of Day 4 was learning that Haskell provides multiple ways to express logic.
+
+The choice depends on the problem:
+
+* `case` → useful for matching specific values or patterns.
+* Guards → useful for conditions, comparisons, and ranges.
+* `where` → useful for local definitions shared across a function.
+* `let ... in` → useful for local bindings within an expression.
+* Pattern matching → useful when behavior depends on the structure or value of data.
+
+These are guidelines rather than strict rules. Multiple constructs can sometimes solve the same problem, so readability and suitability should guide the decision.
+
+### Result
+
+Successfully implemented functions using `case ... of` and guards, while practicing how to choose an appropriate Haskell construct based on the problem being solved.
+
+Day 4 also marked a transition from simply learning syntax toward making implementation decisions based on code readability and problem structure.
+
