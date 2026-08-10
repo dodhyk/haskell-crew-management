@@ -2,6 +2,7 @@ module Main (main) where
 import Basic.Functions
 import Basic.PatternMatching
 import Basic.WhereLet
+import Basic.CaseExpression
 
 main :: IO ()
 main = do
@@ -21,3 +22,9 @@ main = do
   print (employeeSalary 10000000)
   print (calculateTotal 100000)
   print (restaurantBill 100000)
+  print (isWeekend 7)
+  print (dayType 0)
+  print (gradeDescription 'A')
+  print (shippingCategory 10.0)
+  print (employeeStatus 10)
+  print (classifyNumber 10)
